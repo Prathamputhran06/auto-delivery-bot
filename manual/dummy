@@ -1,0 +1,195 @@
+Components required
+
+	Hardware requirement
+		1.raspberry pi 4
+		2.ultrasonic sensor
+		3.IR sensor
+		4.buzzer
+		5.motordriver L2958N
+		6.12v powersupply
+		7.chasis and wheels
+		8.LED 
+		9.jumper wires
+		
+	Software requirement
+		1.raspbean OS
+		2.python 3
+		3.turtle module 
+		4.tkinter module
+		
+
+		
+from turtle import *
+
+class setup(Turtle):
+
+    def __init__(self):
+        self.destination_set = 0
+        self.home_set = 0
+
+    def Title(self):
+        self.title = Turtle()
+        self.title.penup()
+        self.title.hideturtle()
+        self.title.goto(-150,230)
+        self.title.write("Route Map Grid", font=('Arial', 30, 'bold'))
+
+    def set_destination_coordinates(self,x,y):
+        if self.destination_set == 0:
+            self.Title()
+            self.cursor.penup()
+            self.cursor.goto(x, y)
+            self.cursor.pendown()
+            self.text = Turtle()
+            self.text.penup()
+            self.text.hideturtle()
+            self.text.goto(x,y-25)
+            self.text.write("Destination", font=('Arial', 10, 'bold'))
+            self.destination_set = 1
+        else:
+            pass
+
+    def set_home_coordinates(self,x,y):
+        if self.home_set == 0:
+            self.cursor1.penup()
+            self.cursor1.goto(x,y)
+            self.cursor1.pendown()
+            self.text1 = Turtle()
+            self.text1.penup()
+            self.text1.hideturtle()
+            self.text1.goto(x,y-25)
+            self.text1.write("Home", font=('Arial', 10, 'bold'))
+            self.home_set = 1
+        else:
+            pass
+
+    def set_destination(self):
+        self.cursor = Turtle()
+        self.cursor.shape("square")
+        self.cursor.color("green")
+        self.screen = Screen()
+        self.screen.onscreenclick(self.set_destination_coordinates)
+
+    def set_home(self):
+        self.cursor1 = Turtle()
+        self.cursor1.shape("square")
+        self.cursor1.color("red")
+        self.screen1 = Screen()
+        self.screen1.onscreenclick(self.set_home_coordinates)
+
+from gpiozero import Robot
+r = Robot(left=(7,8), right=(9,10))
+
+# Example usage (modify as needed)
+try:
+    while True:
+        command = input("Enter a command (f=forward, b=backward, l=left, r=right, s=stop): ")
+        if command == 'd':
+            r.forward()
+        elif command == 'a':
+            r.backward()
+        elif command == 'w':
+            r.left()
+        elif command == 's':
+            r.right()
+        elif command == 'c':
+            r.stop()
+
+        else:
+            print("Invalid command. Please try again.")
+
+except KeyboardInterrupt:
+    GPIO.cleanup()  # Clean up GPIO on exit
+    print("Program terminated.")
+    
+    
+    
+from tkinter import *
+from Setup import *
+
+
+window = Tk()
+window.title("Auto Delivery Bot")
+window.minsize(width = 600 , height = 600)
+window['bg'] = "#EEE4B1"
+window.config(padx = 100 , pady = 100)
+
+
+destination = setup()
+
+#create canva for the title
+
+canva = Canvas(width = 200 ,height = 224)
+canva.create_text(100 , 130 , text = "prototype of auto delivery bot" , font=('Helvetica', 10 , 'bold'))
+canva.grid(column = 1 , row = 0)
+
+
+#buttons for setting start, stop, destination and home location
+
+set_destination = Button(text = "set destination" , command = destination.set_destination)
+set_destination.grid(column = 0 , row = 1)
+
+set_home = Button(text = "set home" , command = destination.set_home)
+set_home.grid(column = 1 , row = 1)
+
+start = Button(text = "START" , command = None)
+start.grid(column = 2 , row = 1)
+
+stop = Button(text = "STOP" , command = None)
+stop.grid(column = 3 , row = 1)
+
+
+
+window.mainloop()
+
+
+from gpiozero import Robot
+import math
+
+#define the robot pins
+r = Robot(left=(7,8), right=(9,10))
+
+
+def calculate_angle(target_x, target_y):
+    current_x = 0  # Assuming starting from (0,0)
+    current_y = 0
+    dx = target_x - current_x
+    dy = target_y - current_y
+    angle = math.atan2(dy, dx) * (180 / math.pi)
+    return angle
+
+
+
+
+def turn(robot, angle):
+    # Calculate the time required to turn the specified angle
+    # This may vary depending on your robot's characteristics
+    # Adjust these values according to your robot's turning behavior
+    turn_speed = 0.5  # Adjust as necessary
+    turn_duration = abs(angle) / 90 * turn_speed  # Assuming 90 degrees takes turn_speed seconds
+
+    # Determine the direction to turn based on the sign of the angle
+    if angle > 0:
+        # Turn right
+        robot.right()
+    elif angle < 0:
+        # Turn left
+        robot.left()
+
+    # Sleep for the required duration to complete the turn
+    sleep(turn_duration)
+
+    # Stop the robot after turning
+    robot.stop()
+
+
+target_x = 10
+target_y = 5
+angle = calculate_angle(target_x, target_y)
+turn(robot, angle)
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+<mxfile host="app.diagrams.net" modified="2024-04-02T05:53:03.488Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="taoupn7RHGBf9EyE6c2W" version="24.2.1" type="device">
+  <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
+    <mxGraphModel dx="880" dy="439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="zoclGUHh1A7_UrnLKM0W-2" target="zoclGUHh1A7_UrnLKM0W-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoclGUHh1A7_UrnLKM0W-2" target="zoclGUHh1A7_UrnLKM0W-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-2" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="120" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-4" value="&lt;b&gt;Raspberrypi 4&lt;/b&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="zoclGUHh1A7_UrnLKM0W-2">
+          <mxGeometry x="35" y="90" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zoclGUHh1A7_UrnLKM0W-5" target="zoclGUHh1A7_UrnLKM0W-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-5" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zoclGUHh1A7_UrnLKM0W-6" target="zoclGUHh1A7_UrnLKM0W-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-6" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-7" value="&lt;b&gt;IR sensor&lt;/b&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="45" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-8" value="&lt;b&gt;UV sensor&lt;/b&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="45" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-9" value="&lt;b&gt;Buzzer&lt;/b&gt;" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;direction=north;" vertex="1" parent="1">
+          <mxGeometry x="190" y="165" width="60" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zoclGUHh1A7_UrnLKM0W-10" target="zoclGUHh1A7_UrnLKM0W-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="540" y="290" />
+              <mxPoint x="500" y="290" />
+              <mxPoint x="500" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoclGUHh1A7_UrnLKM0W-10" target="zoclGUHh1A7_UrnLKM0W-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-10" value="&lt;b&gt;Motor Driver&lt;/b&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="520" y="185" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-15" value="&lt;b&gt;DC Motor&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="180" y="360" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-16" value="&lt;b&gt;DC Motor&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="510" y="360" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.145;exitY=0;exitDx=0;exitDy=4.35;exitPerimeter=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="zoclGUHh1A7_UrnLKM0W-22" target="zoclGUHh1A7_UrnLKM0W-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="659" y="173" />
+              <mxPoint x="610" y="173" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=27.5;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zoclGUHh1A7_UrnLKM0W-22" target="zoclGUHh1A7_UrnLKM0W-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-22" value="&lt;b&gt;12V supply&lt;/b&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="650" y="200" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.855;entryY=0;entryDx=0;entryDy=4.35;entryPerimeter=0;" edge="1" parent="1" source="zoclGUHh1A7_UrnLKM0W-2" target="zoclGUHh1A7_UrnLKM0W-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="100" />
+              <mxPoint x="701" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoclGUHh1A7_UrnLKM0W-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="zoclGUHh1A7_UrnLKM0W-10" target="zoclGUHh1A7_UrnLKM0W-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
